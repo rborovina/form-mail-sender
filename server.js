@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const express = require('express');
+const cors = require('cors');
 const multer = require('multer');
 const memoryStorage = multer.memoryStorage();
 const nodemailer = require('nodemailer');
@@ -36,6 +37,7 @@ const verifyRecaptcha = async (token) => {
   }
 };
 
+app.use(cors());
 app.use(limiter);
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
