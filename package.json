@@ -1,0 +1,20 @@
+{
+  "name": "form-mail-sender",
+  "version": "1.0.0",
+  "description": "Send form data via email",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Radmilo Borovina <radmilo@pinesoft.io>",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "express-rate-limit": "^7.1.5",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.9",
+    "nodemailer-mailjet-transport": "^1.0.4"
+  }
+}
